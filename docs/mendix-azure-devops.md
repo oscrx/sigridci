@@ -29,8 +29,8 @@ ADD IMAGE
 
 We will create a pipeline that consists of two jobs:
 
-- One job 'SigridPublish' that will publish the main branch to [Sigrid](https://sigrid-says.com) after every commit.
-- One job 'SigridCI' to provide feedback on pull requests, which can be used as input for code reviews.
+- One job 'SigridPublish-for-QSM' that will publish the main branch to [Sigrid](https://sigrid-says.com) after every commit.
+- One job 'SigridCI-for-QSM' to provide feedback on pull requests, which can be used as input for code reviews.
 
 #### Docker-based analysis
 
