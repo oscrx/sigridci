@@ -18,12 +18,6 @@ On-boarding is done automatically when you first run Sigrid CI Publish. As long 
 
 ## Configuration
 
-### Configure both the Sigrid credential and the Mendix PAT to environment variables
-
-Sigrid CI reads your credentials from 2 environment variables called `SIGRID_CI_TOKEN` and `MENDIX_TOKEN`. 
-To add these to your Azure pipeline, follow these steps:
-
-ADD IMAGE
 
 ### Create Azure pipeline configuration file
 
@@ -89,6 +83,8 @@ Commit and push this file to the repository, so that Azure DevOps can use this c
 **Security note:** This example downloads the containers directly from the internet. That might be acceptable for some projects, some projects might not allow this as part of their security policy.  
 
 
+
+
 ### How to Create your Azure DevOps pipeline
 
 In Azure DevOps, access the section "Pipelines" from the main menu. In this example we assume you are using a YAML file to configure your pipeline:
@@ -99,7 +95,14 @@ Select the YAML file you created in the previous step:
 
 <img src="images/azure-selectyaml.png" width="500" />
 
-This will display the contents of the YAML file in the next screen. The final step is to add your account credentials to the pipeline. Click "Variables" in the top right corner. Create a secret named `SIGRID_CI_TOKEN` and use your [Sigrid authentication token](authentication-tokens.md) as the value.
+This will display the contents of the YAML file in the next screen. 
+
+### Add both the Sigrid credential and the Mendix PAT to environment variables
+
+Sigrid CI reads your credentials from 2 environment variables called `SIGRID_CI_TOKEN` and `MENDIX_TOKEN`. 
+To add these to your Azure pipeline, follow these steps:
+
+Click "Variables" in the top right corner. Create a secret named `SIGRID_CI_TOKEN` and use your [Sigrid authentication token](authentication-tokens.md) as the value. And repeat this for the `MENDIX_TOKEN` obtained from warden.mendix.com
 
 <img src="images/azure-variables.png" width="500" />
 
