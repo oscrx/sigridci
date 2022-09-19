@@ -95,7 +95,7 @@ Select the YAML file you created in the previous step:
 
 <img src="images/azure-selectyaml.png" width="500" />
 
-This will display the contents of the YAML file in the next screen. 
+This will display the contents of the YAML file. 
 
 ### Add both the Sigrid credential and the Mendix PAT to environment variables
 
