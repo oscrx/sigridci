@@ -53,7 +53,7 @@ stages:
        
             env:
               SIGRID_CI_TOKEN: $(SIGRID_CI_TOKEN)
-              MENDIX_TOKEN: "$(MENDIX_TOKEN)"
+              MENDIX_TOKEN: $(MENDIX_TOKEN)
               SIGRID_CI_CUSTOMER: 'examplecustomername'
               SIGRID_CI_SYSTEM: 'examplesystemname'
               SIGRID_CI_PUBLISH: 'publish'
@@ -72,7 +72,7 @@ stages:
             /usr/local/bin/entrypoint.sh
             
             env:
-              MENDIX_TOKEN: "$(MENDIX_TOKEN)"
+              MENDIX_TOKEN: $(MENDIX_TOKEN)
               SIGRID_CI_CUSTOMER: 'examplecustomername'
               SIGRID_CI_SYSTEM: 'examplesystemname'
               SIGRID_CI_TARGET_QUALITY: '3.5'
