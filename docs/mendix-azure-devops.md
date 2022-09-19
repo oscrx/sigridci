@@ -10,7 +10,7 @@ Please note: `QSM` is the brand name used by Mendix, in this manual we will use 
 - Your pipeline runners are able to pull this [public docker image](https://hub.docker.com/r/softwareimprovementgroup/mendixpreprocessor), the image is used to preprocess the Mendix code before uploading it to Sigrid.
 - You have a [Sigrid](https://qsm.mendix.com) user account. 
 - You have created an [authentication token using Sigrid](authentication-tokens.md).
-- You have created a Personal access (PAT) token using [warden.mendix.com](https://warden.mendix.com)
+- You have created a Personal access (PAT) token using [warden.mendix.com](https://warden.mendix.com), use the model read only option
 
 ## On-boarding your system to Sigrid
 
@@ -102,7 +102,7 @@ This will display the contents of the YAML file in the next screen.
 Sigrid CI reads your credentials from 2 environment variables called `SIGRID_CI_TOKEN` and `MENDIX_TOKEN`. 
 To add these to your Azure pipeline, follow these steps:
 
-Click "Variables" in the top right corner. Create a secret named `SIGRID_CI_TOKEN` and use your [Sigrid authentication token](authentication-tokens.md) as the value. And repeat this for the `MENDIX_TOKEN` obtained from warden.mendix.com
+Click "Variables" in the top right corner. Create a secret named `SIGRID_CI_TOKEN` and use your [Sigrid authentication token](authentication-tokens.md) as the value. And repeat this for the `MENDIX_TOKEN` obtained from [warden.mendix.com](https://warden.mendix.com).
 
 <img src="images/azure-variables.png" width="500" />
 
