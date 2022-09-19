@@ -86,10 +86,10 @@ Note the name of the branch, which is `main` in the example but might be differe
 
 Commit and push this file to the repository, so that Azure DevOps can use this configuration file for your pipeline. If you already have an existing pipeline configuration, simply add these steps to it.
 
-**Security note:** This example downloads the containers directly from internet. That might be acceptable for some projects, some projects might not allow this as part of their security policy.  
+**Security note:** This example downloads the containers directly from the internet. That might be acceptable for some projects, some projects might not allow this as part of their security policy.  
 
 
-### Step 2: Create your Azure DevOps pipeline
+### How to Create your Azure DevOps pipeline
 
 In Azure DevOps, access the section "Pipelines" from the main menu. In this example we assume you are using a YAML file to configure your pipeline:
 
